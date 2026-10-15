@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATH BLAST: SPACE DEFENDER 🚀</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main id="game-container">
+        <!-- HUD / Status -->
+        <header class="hud">
+            <div>❤️ <span id="lives">3</span></div>
+            <div>🔥 COMBO x<span id="combo">1</span></div>
+            <div>🏆 <span id="score">0</span></div>
+        </header>
+
+        <!-- Área da Pergunta -->
+        <section class="question-box">
+            <h2 id="question">PREPARE-SE!</h2>
+        </section>
+
+        <!-- Canvas do Jogo -->
+        <canvas id="gameCanvas" width="600" height="600"></canvas>
+
+        <!-- Tela Inicial -->
+        <section id="start-screen" class="overlay">
+            <h1>MATH BLAST! 🚀</h1>
+            <p>Use a <b>Nave Espacial</b> para destruir o meteoro correto!</p>
+            <p class="controls-info">⬅️ ➡️ Mova a nave com o mouse ou setas<br>💥 Atire com <b>Espaço</b> ou <b>Clique do Mouse</b></p>
+            <button id="btn-start" class="btn-start">INICIAR MISSÃO 💥</button>
+        </section>
+
+        <!-- Tela de Fim de Jogo -->
+        <section id="end-screen" class="overlay hidden">
+            <h1 id="end-title">FIM DE JOGO!</h1>
+            <p>Sua pontuação final:</p>
+            <p id="final-score" class="score-display">0</p>
+            <button id="btn-restart" class="btn-start">JOGAR DE NOVO 🔄</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
